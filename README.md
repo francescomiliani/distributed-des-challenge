@@ -17,6 +17,7 @@ The "best" strategy to break DES is to perform a brute force attack. This means 
 Breaking DES is clearly a NP-complete problem. It is impossible to find a solution to a NP-complete problem in polynomial time, but given a solution, it is possible to check whether it is valid or not. Typically, all cryptographic problems are NP-complete problems.
 
 **The Basis Idea**
+
 A server for distributing the keys and the clients to do the hard work: test all the keys and check the result.
 
 ---
@@ -25,6 +26,7 @@ A server for distributing the keys and the clients to do the hard work: test all
 
 Server exposes a GUI in order to receive command and provide information about its current state
 Commands:
+
 1. **“ciphertext”, “plaintext”** → provide the ciphertext and the plaintext of the challenge
 2. **vol_num** → number of Volunteers currently connected to the server
 3. **vol_list** → returns the list of Volunteers and their associated blocks
